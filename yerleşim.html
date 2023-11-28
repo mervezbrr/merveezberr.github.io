@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 140px);
+      
+      gap: 13px;
+    }
+
+    .grid-item {
+      
+      
+      text-align: center;
+      
+    }
+
+    .grid-item.ab {
+        padding: 20px;
+      grid-column: span 3;
+      grid-row: span 1;
+      border-top-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+border-right-style:solid;
+      
+    }
+
+    .grid-item.abc {
+        padding:50px;
+      grid-column: span 1;
+      grid-row: span 2;
+      border-top-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+border-right-style:solid;
+      
+    }
+
+    .grid-item.abcd {
+        padding: 30px;
+      grid-column: span 2;
+      grid-row: span 2;
+      border-top-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+border-right-style:solid;
+    }
+
+    .grid-item.abcde {
+      grid-column: span 1;
+      grid-row: span 2;
+      padding: 30px;
+      border-top-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+border-right-style:solid;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item ab" style="background-color: rgba(1, 10, 24, 0.918)">A</div>
+    <div class="grid-item abc" style="background-color: rgb(228, 145, 61)">B</div>
+    <div class="grid-item abc" style="background-color: rgb(20, 182, 82)">C</div>
+    <div class="grid-item abc" style="background-color: rgb(230, 62, 1)" >D</div>
+    <div class="grid-item abcd" style="background-color: rgb(255, 198, 13)">E</div>
+    <div class="grid-item abcde" style="background-color: rgb(138, 5, 138)">F</div>
+    <div class="grid-item ab" style="background-color: rgb(36, 156, 34)">G</div>
+  </div>
+</body>
+</head>
+</html>
